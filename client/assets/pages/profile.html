@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/986b088578.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/requests.js" defer></script>
+    <script src="../assets/js/profile.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/profile_style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+          <h1>
+            <span>trackIT</span>
+          </h1>
+        </a>
+        <ul>
+            <li class="nav-item">
+              <a href="/dashboard" id="nav-link" class="nav-link" >DASHBOARD</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-active">PROFILE</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="edit-profile">
+        <h3>Edit Profile</h3>
+        <input id="edit-name" type="text" placeholder="Enter new name..." required>
+        <button id="submit-name"  type="submit">Save</button>
+        <button id="edit-cancel">Cancel</button>
+        <p id="pos-msg-1">Success</p>
+    </section>
+    <section id="settings">
+        <h3>Edit Email</h3>
+        <input id="edit-email" type="text" placeholder="Enter new email...">
+        <p id="err-msg-1">Email already exists</p>
+        <button id="save-email" type="submit">Save</button>
+        <p id="pos-msg-2">Success</p>
+        
+        <h3>Change Password</h3>
+        <input id="oldPass" type="password" placeholder="old password" required>
+        <p id="err-msg-2">Old password does not match</p>
+        <input id="newPass" type="password" placeholder="new password" required>
+        <input id="samePass" type="password" placeholder="repeat password" required>
+        <p id="err-msg-3">Both passwords must be the same</p>
+        <button id="save" type="submit">Save</button>
+        <button id="pass-cancel">Cancel</button>
+        <p id="pos-msg-3">Success</p>
+    </section>
+    <main>
+        <section>
+            <h2 id="profile-name">John Doe</h2>
+            <p id="email">email</p>
+            <button id="edit-btn">Edit name</button>
+            <button id="settings-btn">Settings</button>
+            <p id="habits">Habits: 0</p>
+        </section>
+    </main>
+</body>
+</html>

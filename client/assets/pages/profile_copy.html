@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/986b088578.js" crossorigin="anonymous"></script>
+    <script src="../js/requests.js" defer></script>
+    <script src="../js/profile-script.js" defer></script>
+    <link rel="stylesheet" href="/client/assets/css/profile_style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+        <div class="container-fluid">
+            
+
+           
+                <a href="#" class="logo">
+                <h1>
+                    <span>trackIT</span>
+                </h1>
+                </a>
+                <ul>
+                    <li class="nav-item">
+                     <a href="./dashboard.html" id="nav-link" class="nav-link" >DASHBOARD</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#" class="nav-active">PROFILE</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+    <section id="edit-profile">
+        <h3>Edit Profile</h3>
+        <input id="edit-name" type="text" placeholder="Enter new name...">
+        <button id="submit-name"  type="submit">Save</button>
+        <button id="edit-cancel">Cancel</button>
+    </section>
+    <section id="settings">
+        <h3>Edit Email</h3>
+        <input id="edit-email" type="text" placeholder="Enter new email...">
+        <button id="save-email" type="submit">Save</button>
+        
+        <h3>Change Password</h3>
+        <input id="oldPass" type="password" placeholder="old password">
+        <input id="newPass" type="password" placeholder="new password">
+        <input id="samePass" type="password" placeholder="repeat password">
+        <button id="save" type="submit">Save</button>
+        <button id="pass-cancel">Cancel</button>
+    </section>
+    <main>
+        <section>
+            <h2 id="profile-name">John Doe</h2>
+            <p id="email">email</p>
+            <button id="edit-btn">Edit name</button>
+            <button id="settings-btn">Settings</button>
+            <p id="habits">Habits: 0</p>
+        </section>
+    </main>
+</body>
+</html>

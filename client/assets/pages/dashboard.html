@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/986b088578.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/requests.js" defer></script>
+    <script src="../assets/js/global.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
+    <!-- <script src="../assets/js/global.js" defer></script> -->
+    <link rel="stylesheet" href="../assets/css/dashboard_style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+          <h1>
+            <span>trackIT</span>
+          </h1>
+        </a>
+        <ul>
+            <li class="nav-item">
+              <a href="#" id="nav-active" class="nav-link" >DASHBOARD</a>
+            </li>
+            <li class="nav-item">
+              <a href="/profile" class="nav-link">PROFILE</a>
+            </li>
+        </ul>
+   </nav>
+   <div>
+        <form id="add-habit-form">
+            <input id="title" placeholder="Enter title..." type="text">
+            <input id="desc" placeholder="Enter Description..." type="text">
+            <input id="freq" placeholder="Enter Frequency..." type="number">
+            <input type="submit" value="Add">
+        </form>
+   </div>
+    <main>
+        <section id="todo-section" class="habit-section">
+            <header>
+                <h2>To Do</h2>
+                <i class="fa-regular fa-clipboard"></i>
+                <ul id='habitContainer'>
+                    <li class="eachHabit">run every day</li>
+                </ul>
+            </header>  
+            <!-- <div class="habit">
+                <p>No Caffeine</p>
+                <i class="fa-solid fa-fire"></i>
+                <p>31</p>
+            </div> -->
+        </section>
+        <section id="completed-section" class="habit-section">
+            <header>
+                <h2>Completed</h2>
+                <i class="fa-solid fa-check"></i>
+            </header>
+<!--             
+            <div class="habit">
+                <p>Drink Water</p>
+                <i class="fa-solid fa-fire"></i>
+                <p>4</p>
+            </div> -->
+        </section>
+        <section id="stats-section">
+            <div id="longest-streak" class="stats">
+                <h3>Longest Streak</h3>
+                <!-- <p>No Caffeine <i class="fa-solid fa-fire"></i> 31</p> -->
+            </div>
+            <div id="deadlines" class="stats">
+                <h3>Deadlines</h3>
+                <!-- <p>No Caffeine - 6 Hours</p> -->
+            </div>
+        </section>
+        <a id="add-habit" href="">Add Habit</a>
+    </main>
+</body>
+</html>
